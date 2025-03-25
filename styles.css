@@ -1,51 +1,159 @@
+/* General styles */
 body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+    color: #333;
+    text-align: center;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f9e3e3;
+}
+
+/* Container styling */
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff6f61;
+}
+
+/* Button styling */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.yes-button {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.no-button {
+    background-color: #ccc;
+    color: #333;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.yes-button:hover {
+    background-color: #ff3b2f;
+}
+
+.no-button:hover {
+    background-color: #999;
+}
+
+/* GIF container styling */
+.gif_container {/* General styles */
+body {
     font-family: 'Arial', sans-serif;
-    flex-direction: column;
-  }
-  
-  .container {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+    color: #333;
     text-align: center;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-    color: #d32f2f;
-  }
-  
-  .buttons {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styling */
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff6f61;
+}
+
+/* Button styling */
+.buttons {
+    display: flex;
+    justify-content: space-around;
     margin-top: 20px;
-  }
-  
-  .yes-button {
-    font-size: 1.5em;
+}
+
+button {
     padding: 10px 20px;
-    margin-right: 10px;
-    background-color: #4caf50;
-    color: white;
+    font-size: 1rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .no-button {
-    font-size: 1.5em;
-    padding: 10px 20px;
-    background-color: #f44336;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.yes-button {
+    background-color: #ff6f61;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .gif_container img {
+}
+
+.no-button {
+    background-color: #ccc;
+    color: #333;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.yes-button:hover {
+    background-color: #ff3b2f;
+}
+
+.no-button:hover {
+    background-color: #999;
+}
+
+/* GIF container styling */
+.gif_container {
+    margin-top: 20px;
+}
+
+.gif_container img {
     max-width: 100%;
-    height: auto;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
     margin-top: 20px;
-  }
+}
+
+.gif_container img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
