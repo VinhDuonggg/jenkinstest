@@ -8,10 +8,13 @@
 </head>
 <body>
     <!-- Background music -->
-    <audio autoplay loop>
+    <audio id="background-music" loop>
         <source src="background-music.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+
+    <!-- Play Music Button -->
+    <button id="play-music-button" onclick="playMusic()">Play Music</button>
 
     <div class="container">
         <h1>Do u love me?</h1>
@@ -23,6 +26,25 @@
             <img src="https://media.giphy.com/media/oz45ELYgMoYVsZqmor/giphy.gif?cid=82a1493br4lqzqwxflnqwxq5pgu9n5m0gtv6ou5ykiyoc8e8&ep=v1_stickers_trending&rid=giphy.gif&ct=s" alt="Cute GIF">
         </div>
     </div>
+    <script>
+        // Attempt to play the music when the page loads
+        window.addEventListener('load', () => {
+            const music = document.getElementById('background-music');
+            music.play().catch((error) => {
+                console.log('Autoplay failed. User interaction is required to play the music.');
+            });
+        });
+
+        // Play music manually when the button is clicked
+        function playMusic() {
+            const music = document.getElementById('background-music');
+            music.play().then(() => {
+                document.getElementById('play-music-button').style.display = 'none'; // Hide the button after playing
+            }).catch((error) => {
+                console.log('Error playing music:', error);
+            });
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
